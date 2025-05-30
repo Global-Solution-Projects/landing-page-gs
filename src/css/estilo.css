@@ -67,7 +67,19 @@ article {
   color: var(--azul-principal);
 }
 
-.imagens-enchentes {
+img {
+  transition: 0.3s ease;
+}
+
+img:hover {
+  transform: translateY(-10px);
+}
+
+.imagens-enchente {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#secao-problema img {
   width: 400px;
 }
 
