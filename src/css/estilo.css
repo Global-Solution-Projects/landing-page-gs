@@ -47,6 +47,13 @@ section {
   padding: 0px 60px;
 }
 
+article {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+}
+
 .titulo-secao {
   margin-bottom: 24px;
 }
@@ -83,4 +90,8 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+
+#secao-objetivos img {
+  width: 300px;
 }
