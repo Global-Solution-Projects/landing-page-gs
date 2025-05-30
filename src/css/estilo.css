@@ -67,7 +67,7 @@ article {
 }
 
 .secao-azul {
-  background-color: #3572ef;
+  background: linear-gradient(to bottom, #3572ef 60%, #1e4189 100%);
   color: #fff;
 }
 
@@ -94,4 +94,8 @@ article {
 
 #secao-objetivos img {
   width: 300px;
+}
+
+#secao-publico img {
+  width: 400px;
 }
