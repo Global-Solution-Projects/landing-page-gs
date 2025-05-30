@@ -157,10 +157,72 @@ img:hover {
   width: 400px;
 }
 
+#secao-quiz {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container-quiz {
+  max-width: 700px;
+}
+
+#secao-quiz h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--cor-principal);
+}
+
+.question-container h2 {
+  margin-bottom: 20px;
+}
+
+#alternativas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.alternativa-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--cor-principal);
+  color: var(--branco);
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.alternativa-btn:hover {
+  background-color: var(--cor-gradiente);
+}
+
+.resultado {
+  text-align: center;
+}
+
+#retryBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--cor-principal);
+  color: var(--branco);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#retryBtn:hover {
+  background-color: var(--cor-gradiente);
+}
+
 .rodape {
   padding: 80px;
   text-align: center;
   font-weight: 600;
+  background-color: var(--cor-principal);
+  color: var(--branco);
 }
 
 .mobile-menu {
