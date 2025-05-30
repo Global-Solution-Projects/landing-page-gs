@@ -18,6 +18,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  font-weight: 600;
 }
 
 .cabecalho nav {
@@ -56,4 +57,30 @@ section {
 
 .imagens-enchentes {
   width: 400px;
+}
+
+.secao-azul {
+  background-color: #3572ef;
+  color: #fff;
+}
+
+#secao-tecnologias {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 100px;
+  padding: 20px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
