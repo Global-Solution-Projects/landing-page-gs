@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-  --azul-principal: #3572ef;
+  --cor-principal: #3572ef;
+  --cor-gradiente: #1e4189;
   --branco: #fff;
 }
 
@@ -20,7 +21,7 @@ body {
 }
 
 .cabecalho {
-  background-color: var(--azul-principal);
+  background-color: var(--cor-principal);
   color: var(--branco);
   padding: 0px 60px;
   position: fixed;
@@ -41,6 +42,7 @@ body {
 
 .lista-navegacao {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 32px;
 }
@@ -52,6 +54,10 @@ body {
 
 .lista-navegacao li a:hover {
   opacity: 0.75;
+}
+
+.icone {
+  cursor: pointer;
 }
 
 section {
@@ -85,7 +91,7 @@ article {
 }
 
 .titulo-azul {
-  color: var(--azul-principal);
+  color: var(--cor-principal);
 }
 
 img {
@@ -105,7 +111,11 @@ img:hover {
 }
 
 .secao-azul {
-  background: linear-gradient(to bottom, #3572ef 60%, #1e4189 100%);
+  background: linear-gradient(
+    to bottom,
+    var(--cor-principal) 60%,
+    var(--cor-gradiente) 100%
+  );
   color: var(--branco);
 }
 
@@ -182,10 +192,11 @@ img:hover {
     width: 30%;
     min-width: 300px;
     height: 92vh;
-    background-color: var(--azul-principal);
+    background-color: var(--cor-principal);
     flex-direction: column;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
+    align-items: baseline;
   }
 
   .lista-navegacao li {
