@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+:root {
+  --azul-principal: #3572ef;
+  --branco: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +16,8 @@ body {
 }
 
 .cabecalho {
-  background-color: #3572ef;
-  color: #fff;
+  background-color: var(--azul-principal);
+  color: var(--branco);
   padding: 16px 60px;
   position: fixed;
   top: 0;
@@ -35,7 +40,7 @@ body {
 
 .cabecalho nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: var(--branco);
 }
 
 section {
@@ -59,7 +64,7 @@ article {
 }
 
 .titulo-azul {
-  color: #3572ef;
+  color: var(--azul-principal);
 }
 
 .imagens-enchentes {
@@ -68,7 +73,7 @@ article {
 
 .secao-azul {
   background: linear-gradient(to bottom, #3572ef 60%, #1e4189 100%);
-  color: #fff;
+  color: var(--branco);
 }
 
 #secao-tecnologias {
@@ -106,4 +111,10 @@ article {
 
 #secao-impacto img {
   width: 400px;
+}
+
+.rodape {
+  padding: 80px;
+  text-align: center;
+  font-weight: 600;
 }
