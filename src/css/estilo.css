@@ -14,6 +14,10 @@ body {
   background-color: #3572ef;
   color: #fff;
   padding: 16px 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .cabecalho nav {
@@ -31,4 +35,25 @@ body {
 .cabecalho nav ul li a {
   text-decoration: none;
   color: #fff;
+}
+
+section {
+  height: 100svh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 60px;
+}
+
+.titulo-secao {
+  margin-bottom: 24px;
+}
+
+.titulo-azul {
+  color: #3572ef;
+}
+
+.imagens-enchentes {
+  width: 400px;
 }
