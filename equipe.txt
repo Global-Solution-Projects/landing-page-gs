@@ -1,0 +1,7 @@
+Global Solution - FIAP - Engenharia de Software - 2025
+
+Pedro Faleiros - RM: 562523
+Luan Felix - RM: 565541
+João Lopes - RM: 565737
+
+https://github.com/Global-Solution-Projects/landing-page-gs.git
