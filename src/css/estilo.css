@@ -22,34 +22,40 @@ body {
 .cabecalho {
   background-color: var(--azul-principal);
   color: var(--branco);
-  padding: 16px 60px;
+  padding: 0px 60px;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   font-weight: 600;
   z-index: 1000;
+  height: 8vh;
+  width: 100%;
 }
 
 .cabecalho nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 8vh;
 }
 
-.cabecalho nav ul {
+.lista-navegacao {
   display: flex;
   list-style: none;
   gap: 32px;
 }
 
-.cabecalho nav ul li a {
+.lista-navegacao li a {
   text-decoration: none;
   color: var(--branco);
 }
 
+.lista-navegacao li a:hover {
+  opacity: 0.75;
+}
+
 section {
-  height: 100svh;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -107,6 +113,7 @@ img:hover {
   display: flex;
   flex-direction: column;
   gap: 80px;
+  justify-content: center;
 }
 
 .grid-container {
@@ -144,4 +151,90 @@ img:hover {
   padding: 80px;
   text-align: center;
   font-weight: 600;
+}
+
+.mobile-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: var(--branco);
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .cabecalho {
+    padding: 0px 30px;
+  }
+
+  .lista-navegacao {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 30%;
+    min-width: 300px;
+    height: 92vh;
+    background-color: var(--azul-principal);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .lista-navegacao li {
+    opacity: 0;
+    margin-left: 30px;
+  }
+
+  .lista-navegacao li:nth-child(1) {
+    margin-top: 30px;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  #secao-tecnologias {
+    gap: 20px;
+  }
+
+  #secao-tecnologias img {
+    width: 100px;
+  }
+
+  .grid-container {
+    gap: 50px;
+  }
+}
+
+.lista-navegacao.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
 }
